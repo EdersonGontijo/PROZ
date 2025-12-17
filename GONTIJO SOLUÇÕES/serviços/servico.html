@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVIÇOS</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:  rgb(213, 236, 213);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        h1 {
+            color: #2d3e50;
+            font-size: 2.5em;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0056b3;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        
+
+        /* Seção de serviços */
+        #NOSSOS_SERVIÇOS {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .service {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .service p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .vpi-agencias-carga {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .vpi-agencias-carga label {
+            font-weight: bold;
+        }
+
+        .vpi-agencias-carga select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #ccc;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .service {
+                padding: 15px;
+            }
+
+            .vpi-agencias-carga {
+                padding: 15px;
+            }
+
+            .vpi-agencias-carga select {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="./gontijinho.gif" alt="Logo do Fundo" width="300">
+
+    <h1>NOSSOS SERVIÇOS</h1>
+    <hr>
+
+    <div id="NOSSOS_SERVIÇOS">
+
+        <!-- Serviço Fretamento -->
+        <div class="service" id="FRETAMENTO">
+            <h2>FRETAMENTO</h2>
+            <p>Além do transporte de passageiros através das linhas regionais, a Gontijo oferece o serviço de traslado,
+                city tour, turismo receptivo, eventos e aluguel de ônibus para outras finalidades. Tudo com a mesma
+                segurança e padrão de qualidade.</p>
+            <p>Atendemos: traslado, fretamentos, city tour, turismo receptivo, eventos, viagens interestaduais e
+                intermunicipais.</p>
+            <p>Oferecemos ônibus com ar condicionado, toalete, 46 lugares e poltronas revestidas em tecido.</p>
+        </div>
+
+        <hr>
+
+        <!-- Serviço de Venda de Ônibus -->
+        <div class="service" id="ONIBUS">
+            <h2>VENDA DE ÔNIBUS</h2>
+            <p>A Gontijo realiza constantemente a venda de ônibus usados, todos revisados com o padrão de qualidade da
+                empresa. Para comprar ônibus usados, entre em contato conosco por telefone ou email.</p>
+        </div>
+
+        <hr>
+
+        <!-- Serviço de Encomendas -->
+        <div class="service" id="ENCOMENDAS">
+            <h2>ENCOMENDAS</h2>
+            <p>Agilidade e segurança no prazo certo! É com a mesma qualidade e segurança de quem transporta milhares de
+                pessoas, que a Gontijo Encomendas faz com que sua mercadoria chegue ao destino no prazo certo.</p>
+            <p>Quando você entrega a sua encomenda na Gontijo, pode ficar tranquilo, ela está em boas mãos. Os bagageiros
+                dos ônibus são uma excelente solução para o envio de encomendas, pois você pode contar com os vários
+                horários e rotas que ligam os mais diversos destinos no Brasil com alta disponibilidade.</p>
+            <p>Não atendemos encomendas expressas nem de urgência. O prazo para entrega dentro do Estado é de 5 a 10
+                dias úteis. A entrega para fora do estado é de 10 a 15 dias úteis.</p>
+            <p>Entre em contato para obter mais informações ou solicite uma cotação ou coleta de mercadoria.</p>
+
+            <!-- Consulta Agências -->
+            <div class="vpi-agencias-carga">
+                <p><strong>Consulte aqui as agências de cargas:</strong></p>
+                <div class="vpi-agencias-form">
+                    <div>
+                        <label for="ag_estado">Estado:</label>
+                        <select name="estado" id="ag_estado" onchange="changeEstado(this.value)">
+                            <option value="">Selecione</option>
+                            <option value="AL">ALAGOAS</option>
+                            <option value="BA">BAHIA</option>
+                            <option value="CE">CEARA</option>
+                            <option value="DF">DISTRITO FEDERAL</option>
+                            <option value="ES">ESPIRITO SANTO</option>
+                            <option value="GO">GOIAS</option>
+                            <option value="MG">MINAS GERAIS</option>
+                            <option value="PB">PARAIBA</option>
+                            <option value="PR">PARANA</option>
+                            <option value="PE">PERNAMBUCO</option>
+                            <option value="SP">SAO PAULO</option>
+                            <option value="RJ">RIO DE JANEIRO</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="ag_cidade">Cidade:</label>
+                        <select name="cidade" id="ag_cidade">
+                            <option value="">Selecione</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+
+</html>

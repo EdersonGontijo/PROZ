@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0c0c0;
+    color: black;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(0, 82, 0);
+    padding: 10px;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+/* Estilo das seções */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #d8d5d5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h4 {
+    color: #f4a261;
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* Estilo para o botão do Maps */
+button {
+    background-color: #f4a261;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+/* Estilo da imagem de localização */
+#LOCALIZACAO img {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Divisórias */
+hr {
+    border: 1px solid #e0e0e0;
+    margin: 30px 0;
+}
+
+#TABELA {
+
+    justify-content: center;
+
+
+}
+
+
+
+
+/* Estilos para a tabela */
+#TABELA {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#TABELA thead {
+    background-color: #af4c4c;
+    color: white;
+}
+
+#TABELA td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#TABELA th {
+    font-weight: bold;
+}
+
+#TABELA tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#TABELA tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo para as bordas da tabela */
+#TABELA td,
+#TABELA th {
+    border: 2px solid #ddd;
+}
+
+
+
+
+
+
+#HOME {
+    text-align: center;
+}
+
+#titulos {
+    text-align: center;
+}
+
+
+/* Ajustes de layout para telas pequenas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
